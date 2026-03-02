@@ -170,6 +170,9 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0.vendor \
     AdvancedDisplay
 
+# Dolby
+$(call inherit-product-if-exists, vendor/sony/dolby/dolby.mk)
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
